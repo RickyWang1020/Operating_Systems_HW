@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "read_data.h": "c",
+        "voter.h": "c",
+        "stdio.h": "c"
+    }
+}
