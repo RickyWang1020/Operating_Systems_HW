@@ -12,7 +12,7 @@ A multi-process sorting program written by Xinran Wang (xw1744) for Programming 
 
 3. The two sorting algorithms I implement are `bubble sort` and `merge sort`. A Sorter with odd index will use bubble sort, and a Sorter with even index will use merge sort.
 
-4. In this program, the No. of `SIGUSR1` received by the Root node is usually smaller than the actual No. of Sorters. This is mainly because of "race condition", where many asynchronous processes (in my program they are nearly completed sorting algorithm processes) send signals to another process (in my program it is the Root) nearly at the same time, and the signal handler function is not fully set up before it can catch the next signal. So that some sent signals are not "seen" because the signal handler is busy handling another incoming signal and is not ready when these "unlucky" signals come in.
+~~4. In this program, the No. of `SIGUSR1` received by the Root node is usually smaller than the actual No. of Sorters. This is mainly because of "race condition", where many asynchronous processes (in my program they are nearly completed sorting algorithm processes) send signals to another process (in my program it is the Root) nearly at the same time, and the signal handler function is not fully set up before it can catch the next signal. So that some sent signals are not "seen" because the signal handler is busy handling another incoming signal and is not ready when these "unlucky" signals come in.~~
 
 ## File Structure
 
