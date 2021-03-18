@@ -91,7 +91,7 @@ void init_fd_for_worker(struct pollfd *pollfds, int worker){
 /* handler function for sigusr1 */
 void sig1_handler(int signum){
     /* re-claiming the handler for future use */
-    void sig1_handler(int signum);
+    signal(SIGUSR1, sig1_handler);
     if (signum == SIGUSR1){
         /* if the signal is sigusr1, increment the counter */
         no_of_sig1 ++;

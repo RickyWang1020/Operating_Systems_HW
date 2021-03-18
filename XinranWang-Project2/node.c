@@ -345,7 +345,7 @@ void merge_data(int *merged_index, double *number_data, int **index_lists, int n
 /* handler function for sigusr2 */
 void sig2_handler(int signum){
     /* re-claiming the handler for future use */
-    void sig2_handler(int signum);
+    signal(SIGUSR2, sig2_handler);
     if (signum == SIGUSR2){
         /* if the signal is sigusr2, increment the counter */
         no_of_sig2 ++;
