@@ -63,7 +63,7 @@ V(get_from_workbench)
     - `"-r"`, the shared memory id of result report struct, which is used for saladmakers to report their total waiting time, total salad-making time, total vegetables used and No. of salads made.
     - `"-p"`, the shared memory id of the struct used to record parallel working, which is for tracking the parallel working time periods of saladmakers.
 
-4. At the end of the program, it will first report the *total number of salads produced*. Then, it will report individual working result of every saladmaker: *total time spent on salad-making*, *total time waiting for delivery of vegetables* from chef, *sum weights of each vegetable* that the saladmaker has used. Also, the program will generate **two** log files, one records the *time intervals and total amout of time that saladmakers worked in parallel* (parallel_time.txt), the other records the timeline operation of each saladmaker (temporal_log.txt).
+4. At the end of the program, it will first report the *total number of salads produced*. Then, it will report individual working result of every saladmaker: *total time spent on salad-making*, *total time waiting for delivery of vegetables* from chef, *sum weights of each vegetable* that the saladmaker has used. Also, the program will generate **two** log files, one records the *time intervals and total amout of time that saladmakers worked in parallel* (`parallel_time.txt`), the other records the timeline operation of each saladmaker (`temporal_log.txt`).
 
 ## Other References
 
